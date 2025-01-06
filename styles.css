@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+/* Offer bar */
+.offer__bar {
+    background-color: #1D232C;
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    font-size: x-large;
+}
+
+/* SideNav */
+.side__nav {
+    background-color: #1D232C;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 10px;
+        width: 100%;
+    }
+    .offer__bar{
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .offer__bar {
+        font-size: larger;
+    }
+    .nav__list {
+        display: none;
+    }
+}
