@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,6 +22,96 @@ body {
 .side__nav {
     background-color: #1D232C;
 }
+
+/* Container */
+.container {
+    width: 98%;
+    margin: auto;
+}
+
+
+/* Slider */
+
+.slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.slider__content{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.slider__button{
+    background-color: #EFEFEF;
+    color: black;
+}
+
+.slider__left-button {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 1;
+}
+
+.slider__left-button i{
+    font-size: 10vw;
+}
+
+.slider__right-button i{
+    font-size: 10vw;
+}
+
+.slider__right-button {
+    color: white;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    z-index: 1;
+}
+
+.slider__image-container {
+    display: flex;
+    transition: 2s;
+    height: 60vh;
+}
+
+.slider__image{
+    width: 100vw;
+}
+
+/* Brands */
+.brand p {
+    text-align: center;
+}
+.brand img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsiveness */

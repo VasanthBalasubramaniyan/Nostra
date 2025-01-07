@@ -56,24 +56,59 @@
     <div class="container">
         <!-- Slider -->
          <div class="slider">
-            <div class="slider__left-button">
-                <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            <div onclick="prevSlide()" id="prevslide" class="slider__left-button">
+                <i id="slider-left-activate" class="fa-solid fa-angle-left"></i>
             </div>
-            <div class="slider__content">
-                <h1 class="text-5xl font-bold">Level up your style with</h1>
-                <h4 class="text-3xl font-bold">Summer Collection</h4>
-                <button class="flex">
+            <div class="p-5 slider__content text-white z-50">
+                <h1 class="text-7xl font-bold mt-3">Level up your style with our</h1>
+                <h4 class="text-3xl font-bold mt-5">Summer Collection</h4>
+                <button class="slider__button p-3 mt-3">
                     Shop Now 
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
-            <div class="slider__images">
-                <img src="./Images/Slider/slider-one.jpg" style="width: 100%;">
-                <img src="./Images/Slider/slider-one.jpg">
-                <img src="./Images/Slider/slider-one.jpg">
+            <div class="slider__image-container">
+                <img class="slider__image" src="./Images/Slider/slider-one.jpg" width="100%">
+                <img class="slider__image" src="./Images/Slider/slider-one.jpg">
+                <img class="slider__image" src="./Images/Slider/slider-one.jpg">
             </div>
-            <div class="slider-right-button">
-                <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+            <div onclick="nextSlide()" id="nextslide" class="slider__right-button flex items-center justify-end">
+                <i id="slider-right-activate" class="fa-solid fa-angle-right absolute z-50" style="color: #ffffff;"></i>
+            </div>
+         </div>
+
+        <!-- Brands -->
+         <div class="brands__section mt-10">
+            <h2 class="text-2xl font-bold">Brands</h2>
+            <div class="brands__container flex mt-5 p-3">
+                <div class="brand">
+                    <img src="./Images/Brands/puma.png">
+                    <p>Puma</p>
+                </div>
+                <div class="brand">
+                    <img src="./Images/Brands/adidas.png">
+                    <p>Adidas</p>
+                </div>
+                <div class="brand">
+                    <img src="./Images/Brands/simple.png">
+                    <p>Simple</p>
+                </div>
+                <div class="brand">
+                    <img src="./Images/Brands/leaves.png">
+                    <p>Leaves</p>
+                </div>
+                <div class="brand">
+                    <img src="./Images/Brands/behance.png">
+                    <p>Behance</p>
+                </div>
+                <div class="brand">
+                    <img src="./Images/Brands/twitch.png">
+                    <p>Twitch</p>
+                </div>
+                <div class="brand">
+                    <img src="./Images/Brands/leaves.png">
+                    <p>Leaves</p>
+                </div>
             </div>
          </div>
     </div>

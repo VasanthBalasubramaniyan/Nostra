@@ -17,3 +17,9 @@ menuIcon.addEventListener("click",function(){
 sideNavClose.addEventListener("click",function(){
     sideNav.style.left = "-50%"
 })
+
+// Slider
+
+var prevSlide = document.getElementById("prevslide")
+var nextSlide = document.getElementById("nextslide")
+
