@@ -18,6 +18,15 @@ body {
     font-size: x-large;
 }
 
+/* Nav-bar */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* SideNav */
 .side__nav {
     background-color: #1D232C;
@@ -86,18 +95,128 @@ body {
     width: 100vw;
 }
 
-/* Brands */
+
+/* Brands Section */
+
+.brands__container {
+    justify-content: space-between;
+}
 .brand p {
+    margin-top: 10px  ;
     text-align: center;
 }
 .brand img {
-    width: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
 }
 
+/* Service Section */
 
+.service__section-card {
+    background-color: #F2F4F7;
+    padding: 10px;
+    border-radius: 5px;
+    width: 25%;
+}
 
+/* Arrival Section */
+.arrival__section-card {
+    position: relative;
+    width: 20%;
+}
+.arrival__button {
+    position: absolute;
+    top: 55%;
+    left: 28%;
+    background-color: #F0F0F0;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 3;
+    border: none;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    opacity: 0.6;
+    background-color: black;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
 
+/* Most Wanted Section */
+.wanted__section-cards {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: mandatory;
+}
 
+.wanted__section-cards::-webkit-scrollbar {
+    display: none;
+}
+.wanted__section-card {
+    width: 350px;
+    position: relative;
+    padding: 2px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+.wanted__section-card img {
+    border-radius: 10px;
+}
+.wanted__overlay {
+    position: absolute;
+    color: white;
+    background-color: red;
+    top: 5px;
+    left: 5px;
+    border-radius:10px;
+    padding: 2px;
+    font-size: 30px;
+}
+.heart-image {
+    width: 3vw;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+/* Limited Section */
+.limited__section {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #1D232C;
+}
+
+.image__container {
+    width: 45%;
+    padding: 10px;
+}
+
+.image__container img {
+    height: 40vh;
+}
+
+.limited__section-desc {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.limited__section-button {
+    background-color: #F0F0F0;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    width: 30%;
+}
 
 
 
@@ -123,13 +242,181 @@ body {
     .offer__bar{
         font-size: larger;
     }
+    .slider__left-button i{
+        font-size: 8vw;
+    }
+    
+    .slider__right-button i{
+        font-size: 8vw;
+    }
+
+    .slider__image-container {
+        height: 40vh;
+    }
+    .slider__left-button {
+        top: 30%;
+    }
+    .slider__right-button {
+        top: 45%;
+    }
+
+    /* Brands Section */
+    .brand img {
+        width: 40px;
+        gap: 10px;
+    }
+
+    /* Services Section */
+
+    .services-head-title h2 {
+        font-size: x-large;
+    }
+    .services-head-desc p {
+        font-size: large;
+    }
+    /* Arrivals Section */
+    .arrivals__section {
+        font-size: x-large;
+    }
+    /* Arrivals Section */
+    .arrivals__section {
+        font-size: large;
+    }
+    .arrival__button {
+        font-size: 1.5vw;
+        padding: 5px;
+        left: 20%;
+    }
+    .arrivals__section h2 {
+        font-size: 3.5vw;
+    }
+
+    /* Wanted Section */
+    .wanted__section-card {
+        width: 125px;
+    }
+    .wanted__overlay {
+        font-size: 15px;
+    }
+    /* Limited section */
+    .limited__section {
+        justify-content: space-evenly;
+    }
+    .image__container {
+        width: 40%;
+        height: 40%;
+    }
+    .image__container img {
+        width: 100%;
+        height: 100%;
+    }
+    .limited__section-desc {
+        width: 25%;
+        margin-left: 10px;
+    }
+    .limited__section-desc h1{
+        font-size: 3vw;
+    }
+    .limited__section-desc h3{
+        font-size: 2vw;
+    }
+    .limited__section-button {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    .container {
+        width: 95%;
+    }
     .offer__bar {
         font-size: larger;
     }
     .nav__list {
         display: none;
+    }
+
+    /* Slider Section */
+    .slider__left-button i{
+        font-size: 6vw;
+    }
+    
+    .slider__right-button i{
+        font-size: 6vw;
+    }
+    .slider__image-container {
+        height: 40vh;
+    }
+    .slider__left-button {
+        top: 35%;
+    }
+    .slider__right-button {
+        top: 42%;
+    }
+    .slider__content h1 {
+        font-size: xx-large;
+    }
+    .slider__content h4 {
+        font-size: x-large;
+    }
+
+    /* Brands Section */
+    .brands__section h2 {
+        font-size: x-large;
+    }
+    .brand img {
+        width: 40px;
+    }
+    /* Services Section */
+
+    .services-head-title h2 {
+        font-size: large;
+    }
+    .services-head-desc p {
+        font-size: 10px;
+    }
+
+    .service__section-card {
+        font-size: 6px;
+    }
+
+    /* Arrivals Section */
+    .arrivals__section {
+        font-size: large;
+    }
+    .arrival__button {
+        font-size: 1.2vw;
+        padding: 5px;
+    }
+    .arrivals__section h2 {
+        font-size: 3.5vw;
+    }
+
+    /* Limited section */
+    .limited__section {
+        justify-content: space-evenly;
+    }
+    .image__container {
+        width: 60%;
+        height: 60%;
+    }
+    .image__container img {
+        width: 100%;
+        height: 100%;
+    }
+    .limited__section-desc {
+        width: 30%;
+        padding: 0;
+        margin-left: 10px;
+    }
+    .limited__section-desc h1{
+        font-size: 3vw;
+    }
+    .limited__section-desc h3{
+        font-size: 2vw;
+    }
+    .limited__section-button {
+        width: 50%;
+        padding: 10px;
     }
 }
